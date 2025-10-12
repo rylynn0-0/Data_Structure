@@ -34,8 +34,9 @@ class InputBox :public sf::Drawable{
 
 	int pre_time;
 
+
 public:
-	InputBox(sf::Vector2f pos, sf::Vector2f size,int str_size,std::u32string nstr):
+	InputBox(sf::Vector2f pos, sf::Vector2f size,int str_size,std::u32string nstr,int len):
 		input_text(font),normal_text(font),show_text(new sf::Text(font) )
 	   , aboveSound(aboveBuffer), choseSound(choseBuffer){
 		normal_rect.setPosition(pos);
@@ -44,7 +45,9 @@ public:
 
 		pre_time = 0;
 		
+		len++;
 		max_x = pos.x + size.x;
+		max_x = std::min(max_x,(int)pos.x+len*str_size );
 
 		normal_rect.setSize(size);
 		chosen_rect.setSize(size);
@@ -136,7 +139,7 @@ public:
 			is_above = 1;
 		}
 		else is_above = 0;
-
+		
 		if (event->getIf<sf::Event::MouseButtonPressed>()||event->getIf<sf::Event::KeyPressed>()) {
 			update_press(window, event);
 		}
@@ -144,9 +147,10 @@ public:
 		if (is_chosen) {
 			show_rect = &chosen_rect;
 			show_text = &input_text;
+			
+			if (auto code = event->getIf<sf::Event::KeyPressed>() ) {
 
-			if (auto code = event->getIf<sf::Event::KeyPressed>()) {
-				int input= (int)code->scancode ;
+				int input= (int)(code->scancode) ;
 				sf::Vector2 line_pos = line.getPosition();
 				if (input >= 26 && input < 35&& line_pos.x+str_size< max_x) {
 					num = num * 10 + input-25;
@@ -184,7 +188,7 @@ public:
 			}
 			
 		}
-		if (is_above) {
+		else if (is_above) {
 			if(!is_chosen)show_rect = &above_rect;
 			is_shine = 0;
 			
@@ -202,12 +206,13 @@ public:
 	void update_press(const sf::RenderWindow& window, std::optional<sf::Event> event) {
 		sf::Vector2i pos = sf::Mouse::getPosition(window);
 
-		if ((sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) || (!is_chosen && event->getIf<sf::Event::KeyPressed>())
+		if (((sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) || 
+			(!is_chosen && event->getIf<sf::Event::KeyPressed>()))
 			&& pos.x >= show_rect->getPosition().x
 			&& pos.x <= show_rect->getPosition().x + show_rect->getSize().x
 			&& pos.y >= show_rect->getPosition().y
 			&& pos.y <= show_rect->getPosition().y + show_rect->getSize().y) {
-			if (!is_chosen&&!event->getIf<sf::Event::KeyPressed>())choseSound.play();
+			if (!event->getIf<sf::Event::KeyPressed>())choseSound.play();
 			is_chosen = !is_chosen;
 		}
 
@@ -216,6 +221,7 @@ public:
 		if (is_chosen) {
 			show_rect = &chosen_rect;
 			show_text = &input_text;	
+			is_shine = 1;
 		}
 		else {
 			is_shine = 0;
@@ -263,8 +269,13 @@ public:
 		if(flag)choseSound.play();
 		return flag;
 	}
+
 	void got_put() {
 		is_inputting = 0;
+	}
+
+	bool above() {
+		return is_above;
 	}
 
 	sf::Vector2f getPosition() {

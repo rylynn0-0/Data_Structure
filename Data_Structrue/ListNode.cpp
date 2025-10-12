@@ -2,6 +2,9 @@
 #include<SFML/Graphics.hpp>
 #include<SFML/Audio.hpp>
 #include<iostream>
+#include<typeinfo>
+
+template <class T>
 class ListNode :public sf::Drawable{
 	int num;
 	int str_size;
@@ -23,8 +26,9 @@ class ListNode :public sf::Drawable{
 	bool used = 0;
 	bool is_chosen;
 	bool is_above;
+	bool  able;
 public:
-	ListNode(ListNode& node):text(font),  aboveSound(aboveBuffer), choseSound(choseBuffer) {
+	ListNode<T>(ListNode& node):text(font),  aboveSound(aboveBuffer), choseSound(choseBuffer) {
 		std::cout << "copy" << std:: endl;
 		num=node.num;
 		str_size=node.str_size;
@@ -79,10 +83,14 @@ public:
 		is_above=0;
 	}
 
-	ListNode():text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {}
+	ListNode<T>():text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {}
 
-	ListNode(int n, sf::Vector2f pos, sf::Vector2f size,int str_size):text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {
-		num = n;
+	ListNode<T>(T n, sf::Vector2f pos, sf::Vector2f size={200,50}, int str_size=24) : text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {
+		if (typeid(n) == typeid(int))num = n;
+		else if (typeid(n) == typeid(char)) {
+			str = n;
+		}
+
 		this->str_size = str_size;
 		is_chosen = 0;
 		is_above = 0;
@@ -124,7 +132,7 @@ public:
 
 		sf::Vector2f position = pos;
 
-		str = std::to_string(num);
+		if(typeid(T)==typeid(int))str = std::to_string(num);
 		
 		std::size_t len = str.length();
 		position.x += size.x / 2;
@@ -214,7 +222,7 @@ public:
 			&& pos.x <= show_rect->getPosition().x + show_rect->getSize().x
 			&& pos.y >= show_rect->getPosition().y
 			&& pos.y <= show_rect->getPosition().y + show_rect->getSize().y
-			)if (used) { if (!is_chosen)choseSound.play(); is_chosen = !is_chosen; }
+			)if (used||able) { if (!is_chosen)choseSound.play(); is_chosen = !is_chosen; }
 		if (is_chosen) {
 			show_rect = &chosen_rect;
 			
@@ -228,24 +236,50 @@ public:
 	}
 
 	void set_num(int num) {
-		sf::Vector2f size = normal_rect.getSize();
-		this->num = num;
-		str = std::to_string(num);
+		if (typeid(T) == typeid(int)) {
+			sf::Vector2f size = normal_rect.getSize();
+			this->num = num;
+			str = std::to_string(num);
 
-		int len = std::to_string(num).length();
-		size.x = std::max(100, str_size * len + 20);
+			int len = std::to_string(num).length();
+			size.x = std::max(100, str_size * len + 20);
 
-		setSize(size);
+			setSize(size);
 
-		text.setString(str);
-		sf::Vector2 pos = normal_rect.getPosition();
-		pos.x += normal_rect.getSize().x / 2;
-		pos.y += normal_rect.getSize().y / 2;
-		pos.y -= str_size / 3 * 2;
-		pos.x -= str.length() * str_size /2;
-		text.setPosition(pos);
-		used = 1;
+			text.setString(str);
+			sf::Vector2 pos = normal_rect.getPosition();
+			pos.x += normal_rect.getSize().x / 2;
+			pos.y += normal_rect.getSize().y / 2;
+			pos.y -= str_size / 3 * 2;
+			pos.x -= str.length() * str_size / 2;
+			text.setPosition(pos);
+			used = 1;
+		}
 	}
+
+	void set_char(char s) {
+		if (typeid(T) == typeid(char)) {
+			sf::Vector2f size = normal_rect.getSize();
+			
+			this->str = s;
+
+			int len = str.length();
+			size.x = std::max(100, str_size * len + 20);
+
+			setSize(size);
+
+			text.setString(str);
+			sf::Vector2 pos = normal_rect.getPosition();
+			pos.x += normal_rect.getSize().x / 2;
+			pos.y += normal_rect.getSize().y / 2;
+			pos.y -= str_size / 3 * 2;
+			pos.x -= str.length() * str_size / 2;
+			text.setPosition(pos);
+			used = 1;
+		}
+	}
+
+	
 
 	bool chosen() {
 		return is_chosen;
@@ -256,11 +290,20 @@ public:
 		is_chosen = 1;
 	}
 
+	void set_able() {
+		able = 1;
+		
+	}
+
 	void set_unchosen() {
 		is_chosen = 0;
 	}
 
 	int getNum() {
+		return num;
+	}
+
+	int get_num() {
 		return num;
 	}
 

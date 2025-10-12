@@ -133,16 +133,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arrow.cpp" />
+    <ClCompile Include="ArrowButton.cpp" />
     <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Home.cpp" />
     <ClCompile Include="input_box.cpp" />
+    <ClCompile Include="Linked.cpp" />
+    <ClCompile Include="LinkNode.cpp" />
     <ClCompile Include="List.cpp" />
     <ClCompile Include="ListNode.cpp" />
-    <ClCompile Include="List_test.cpp" />
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="List_test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Scrollbox.cpp" />
     <ClCompile Include="Sequential_List.cpp" />
+    <ClCompile Include="show.cpp" />
+    <ClCompile Include="ShowStack.cpp" />
+    <ClCompile Include="Stack.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sequential_List.h" />

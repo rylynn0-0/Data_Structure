@@ -36,6 +36,36 @@
     <ClCompile Include="List.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Arrow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Home.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scrollbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="show.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkNode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowStack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrowButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sequential_List.h">
