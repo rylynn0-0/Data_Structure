@@ -156,41 +156,41 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(83,37): warning
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(84,36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   (编译源文件“ArrowButton.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“ArrowButton.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“ArrowButton.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“ArrowButton.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“ArrowButton.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“ArrowButton.cpp”)
   
   Button.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   Home.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“Home.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Home.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Home.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Home.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“Home.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Scrollbox.cpp(25,25): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -225,19 +225,19 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): wa
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:             T=float
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:         ]
   Linked.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“Linked.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Linked.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Linked.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Linked.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“Linked.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -596,19 +596,19 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): wa
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:         ]
   (编译源文件“List.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“List.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“List.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“List.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“List.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“List.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(35,26): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
@@ -801,19 +801,19 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): war
   
   ListNode.cpp
   main.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“main.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“main.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“main.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“main.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“main.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -1096,11 +1096,52 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\Linked.cpp(262,20): warni
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Linked.cpp(262,20): warning C4305:         ]
   (编译源文件“main.cpp”)
   
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(81,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+      D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(81,11):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\State.cpp(58,4):
+          查看对正在编译的 类 模板 实例化“ShowQueue<int>”的引用
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(54,7):
+          在编译 类 模板 成员函数“void ShowQueue<int>::Delete(void)”时
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244: “=”: 从“const _Ty”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:             _Ty=int
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         ]
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         and
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(92,35): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(39,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+      D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(39,11):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(27,7):
+          在编译 类 模板 成员函数“void ShowQueue<int>::Insert(int)”时
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244: “=”: 从“const _Ty”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:             _Ty=int
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         ]
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         and
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         ]
+  (编译源文件“main.cpp”)
+  
 D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(81,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“main.cpp”)
       D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(81,11):
       模板实例化上下文(最早的实例化上下文)为
-          D:\数据结构可视化\Data_Structrue\Data_Structrue\State.cpp(49,4):
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\State.cpp(52,4):
           查看对正在编译的 类 模板 实例化“ShowStack<int>”的引用
           D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(56,7):
           在编译 类 模板 成员函数“void ShowStack<int>::Delete(void)”时
@@ -1162,14 +1203,14 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(266,12): war
       模板实例化上下文(最早的实例化上下文)为
           D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(260,7):
           在编译 类 模板 成员函数“void ListNode<int>::set_char(char)”时
-              D:\数据结构可视化\Data_Structrue\Data_Structrue\Stack.cpp(88,57):
-              请参阅 "Stack<T>::push" 中对 "ListNode<int>::set_char" 的第一个引用
+              D:\数据结构可视化\Data_Structrue\Data_Structrue\Queue.cpp(77,58):
+              请参阅 "Queue<T>::push" 中对 "ListNode<int>::set_char" 的第一个引用
           with
           [
               T=int
           ]
-              D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(47,13):
-              请参阅 "ShowStack<int>::Insert" 中对 "Stack<T>::push" 的第一个引用
+              D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(45,13):
+              请参阅 "ShowQueue<int>::Insert" 中对 "Queue<T>::push" 的第一个引用
           with
           [
               T=int
@@ -1186,20 +1227,21 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(267,21): war
 D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(267,21): warning C4244:         ]
   (编译源文件“main.cpp”)
   
+  Queue.cpp
   Scrollbox.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“Scrollbox.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Scrollbox.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Scrollbox.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“Scrollbox.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“Scrollbox.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Scrollbox.cpp(25,25): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -1216,19 +1258,19 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\Scrollbox.cpp(33,17): war
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Scrollbox.cpp(50,12): warning C4244: “初始化”: 从“const float”转换到“int”，可能丢失数据
   Sequential_List.cpp
   show.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“show.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“show.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“show.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“show.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“show.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -1383,20 +1425,198 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): war
 D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         ]
   (编译源文件“show.cpp”)
   
+  ShowQueue.cpp
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244: “=”: 从“int”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(104,17): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(35,26): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(35,26): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(35,26): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(35,26): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(35,26): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(36,29): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(36,29): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(36,29): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(36,29): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(36,29): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(39,29): warning C4244: “-=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(39,29): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(39,29): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(39,29): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(39,29): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(40,29): warning C4244: “-=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(40,29): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(40,29): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(40,29): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(40,29): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(44,46): warning C4244: “-=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(44,46): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(44,46): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(44,46): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(44,46): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(45,46): warning C4244: “-=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(45,46): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(45,46): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(45,46): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(45,46): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,39): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,39): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,39): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,39): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,39): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,32): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,32): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,32): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,32): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(50,32): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,40): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,40): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,40): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,40): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,40): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,33): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,33): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,33): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,33): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(51,33): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(52,34): warning C4244: “参数”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(52,34): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(52,34): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(52,34): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(52,34): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(64,30): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(65,29): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(66,28): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(82,38): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(83,37): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Arrow.cpp(84,36): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(71,33): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(71,33): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(71,33): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(71,33): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(71,33): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(72,33): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(72,33): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(72,33): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(72,33): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(72,33): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(78,30): warning C4244: “+=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(78,30): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(78,30): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(78,30): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(78,30): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(79,30): warning C4244: “+=”: 从“double”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(79,30): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(79,30): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(79,30): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(79,30): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(113,35): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(244,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“ShowQueue.cpp”)
+      D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(244,12):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(85,14):
+          查看对正在编译的 类 模板 实例化“ListNode<int>”的引用
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(238,7):
+          在编译 类 模板 成员函数“void ListNode<int>::set_num(int)”时
+              D:\数据结构可视化\Data_Structrue\Data_Structrue\show.cpp(86,16):
+              请参阅 "Show::rect_move_circle" 中对 "ListNode<int>::set_num" 的第一个引用
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244: “=”: 从“const _Ty”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:             _Ty=int
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         ]
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         and
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): warning C4244:         ]
+  (编译源文件“ShowQueue.cpp”)
+  
   ShowStack.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“ShowStack.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“ShowStack.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“ShowStack.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“ShowStack.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“ShowStack.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -1563,19 +1783,19 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(245,21): war
   
   Stack.cpp
   state.cpp
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(87,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(89,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“state.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(254,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(262,53): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“state.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(255,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(263,52): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“state.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(256,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(264,51): warning C4244: “参数”: 从“float”转换到“uint8_t”，可能丢失数据
   (编译源文件“state.cpp”)
   
-D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(274,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\Button.cpp(282,19): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“state.cpp”)
   
 D:\数据结构可视化\Data_Structrue\Data_Structrue\input_box.cpp(49,17): warning C4244: “=”: 从“T”转换到“int”，可能丢失数据
@@ -1858,11 +2078,52 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\Linked.cpp(262,20): warni
 D:\数据结构可视化\Data_Structrue\Data_Structrue\Linked.cpp(262,20): warning C4305:         ]
   (编译源文件“state.cpp”)
   
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(81,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“state.cpp”)
+      D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(81,11):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\state.cpp(58,4):
+          查看对正在编译的 类 模板 实例化“ShowQueue<int>”的引用
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(54,7):
+          在编译 类 模板 成员函数“void ShowQueue<int>::Delete(void)”时
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244: “=”: 从“const _Ty”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:             _Ty=int
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         ]
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         and
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(82,24): warning C4244:         ]
+  (编译源文件“state.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(92,35): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“state.cpp”)
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(39,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“state.cpp”)
+      D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(39,11):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(27,7):
+          在编译 类 模板 成员函数“void ShowQueue<int>::Insert(int)”时
+  
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244: “=”: 从“const _Ty”转换到“T”，可能丢失数据
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         with
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:             _Ty=int
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         ]
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         and
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         [
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:             T=float
+D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(40,24): warning C4244:         ]
+  (编译源文件“state.cpp”)
+  
 D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(81,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   (编译源文件“state.cpp”)
       D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(81,11):
       模板实例化上下文(最早的实例化上下文)为
-          D:\数据结构可视化\Data_Structrue\Data_Structrue\state.cpp(49,4):
+          D:\数据结构可视化\Data_Structrue\Data_Structrue\state.cpp(52,4):
           查看对正在编译的 类 模板 实例化“ShowStack<int>”的引用
           D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(56,7):
           在编译 类 模板 成员函数“void ShowStack<int>::Delete(void)”时
@@ -1924,14 +2185,14 @@ D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(266,12): war
       模板实例化上下文(最早的实例化上下文)为
           D:\数据结构可视化\Data_Structrue\Data_Structrue\ListNode.cpp(260,7):
           在编译 类 模板 成员函数“void ListNode<int>::set_char(char)”时
-              D:\数据结构可视化\Data_Structrue\Data_Structrue\Stack.cpp(88,57):
-              请参阅 "Stack<T>::push" 中对 "ListNode<int>::set_char" 的第一个引用
+              D:\数据结构可视化\Data_Structrue\Data_Structrue\Queue.cpp(77,58):
+              请参阅 "Queue<T>::push" 中对 "ListNode<int>::set_char" 的第一个引用
           with
           [
               T=int
           ]
-              D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowStack.cpp(47,13):
-              请参阅 "ShowStack<int>::Insert" 中对 "Stack<T>::push" 的第一个引用
+              D:\数据结构可视化\Data_Structrue\Data_Structrue\ShowQueue.cpp(45,13):
+              请参阅 "ShowQueue<int>::Insert" 中对 "Queue<T>::push" 的第一个引用
           with
           [
               T=int

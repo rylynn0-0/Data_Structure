@@ -34,10 +34,10 @@ protected:
 	int str_size = 24;
 public:
 	Show(int len=999,std::u32string str=U"«Î ‰»Î") :returnbutton({25,25}, {100,50}, U"∑µªÿ", 30),
-		inputbox({200,400}, {250,50}, 24, str,len),
-		insertbutton({460,400}, {150,50}, U"INSERT", 24),
-		clearbutton({620,400}, {150,50}, U"CLEAR", 24),
-		deletebutton({780,400}, {150,50}, U"DELETE", 24) 
+		inputbox({200,450}, {250,50}, 24, str,len),
+		insertbutton({460,450}, {150,50}, U"INSERT", 24),
+		clearbutton({620,450}, {150,50}, U"CLEAR", 24),
+		deletebutton({780,450}, {150,50}, U"DELETE", 24) 
 		{}
 
 

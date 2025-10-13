@@ -14,6 +14,7 @@ public:
 		str.push_back(U"顺序表");
 		str.push_back(U"链式表");
 		str.push_back(U"栈");
+		str.push_back(U"队列");
 		str.push_back(U"哈哈");
 		Init();
 	}

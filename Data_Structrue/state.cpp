@@ -10,18 +10,21 @@
 #include"Home.cpp"
 #include"Linked.cpp"
 #include"ShowStack.cpp"
+#include"ShowQueue.cpp"
 
 enum STATE {
 	HOME,
 	RANKEDLIST,
 	LINKEDLIST,
-	STACK
+	STACK,
+	QUEUE
 };
 
 class State : public sf::Drawable {
 	List* rankedlist;
 	Linked* linkedlist;
 	ShowStack<int>* stack;
+	ShowQueue<int>* queue;
 	Home* home;
 	STATE state;
 	
@@ -51,6 +54,12 @@ public :
 				state = STATE::HOME;
 			}
 			break;
+		case STATE::QUEUE:
+			queue->update(window, event);
+			if (queue->Return()) {
+				state = STATE::HOME;
+			}
+			break;
 		case STATE::HOME:
 			home->update(window, event);
 			if (home->click()) {
@@ -67,6 +76,11 @@ public :
 				if (home->getstate() == U"’ª") {
 					state = STATE::STACK;
 					if (!stack)stack = new ShowStack<int>();
+				}
+
+				if (home->getstate() == U"∂”¡–") {
+					state = STATE::QUEUE;
+					if (!queue)queue= new ShowQueue<int>();
 				}
 				
 			}
@@ -86,6 +100,9 @@ public :
 			break;
 		case STATE::STACK:
 			stack->update_shine(time);
+			break;
+		case STATE::QUEUE:
+			queue->update_shine(time);
 			break;
 		case STATE::HOME:
 			home->update_shine(time);
@@ -108,6 +125,9 @@ private:
 			break;
 		case STATE::STACK:
 			target.draw(*stack, states);
+			break;
+		case STATE::QUEUE:
+			target.draw(*queue, states);
 			break;
 		case STATE::HOME:
 			target.draw(*home, states);

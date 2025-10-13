@@ -1,14 +1,15 @@
 #include"Sequential_List.h"
 #include<iostream>
 #include<SFML/Graphics.hpp>
-#include"Button.cpp"
-#include"input_box.cpp"
-#include"ListNode.cpp"
-#include"List.cpp"
-#include"Arrow.cpp"
-#include"Scrollbox.cpp"
-#include"Linked.cpp"
-#include"ShowStack.cpp"
+//#include"Button.cpp"
+//#include"input_box.cpp"
+//#include"ListNode.cpp"
+//#include"List.cpp"
+//#include"Arrow.cpp"
+//#include"Scrollbox.cpp"
+//#include"Linked.cpp"
+//#include"ShowStack.cpp"
+#include"ShowQueue.cpp"
 
 
 using namespace std;
@@ -21,7 +22,8 @@ void solve() {
     //Linked link;
     /*ListNode<char> list('(', {100,100}, {100,100}, 24);
     list.set_char('(');*/
-    ShowStack<int> st;
+    ShowQueue<int> que;
+    
    
     /*LinkNode node({ 200,200 }, 200);
     LinkNode node2({ 500,200 }, 100);
@@ -51,7 +53,7 @@ void solve() {
                 window.close();
 
            // list.update(window, event);
-            st.update(window, event);
+            que.update(window, event);
            /* node.update(window, event);
             node2.update(window, event);
             node3.update(window, event);
@@ -63,9 +65,9 @@ void solve() {
            
         }
 
-        st.update_shine(time);
+        //que.update_shine(time);
         window.clear(); 
-        window.draw(st);
+        window.draw(que);
         //window.draw(list);
        
        /* window.draw(node);

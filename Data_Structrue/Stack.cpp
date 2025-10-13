@@ -110,14 +110,7 @@ public:
 				top = myst[len - 1]->get_num();
 			}
 
-			sf::Vector2f S = { 0,0 };
-			if (len > 0)
-				S.x = myst[len - 1]->getPosition().x + myst[len - 1]->getSize().x + 25 - rect1.getPosition().x;
-			else S.x = 300;
-
-			S.x = std::max(S.x, (float)300.0);
-			rect1.setSize(S);
-			rect3.setSize(S);
+		
 		}
 	}
 

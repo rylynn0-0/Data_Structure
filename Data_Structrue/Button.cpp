@@ -4,6 +4,7 @@
 #include<String>
 #include<functional>
 #include<SFML/Audio.hpp>
+#include<thread>
 
 
 
@@ -33,6 +34,7 @@ class Button :public sf::Drawable{
 	bool is_click = 0;
 	bool is_play = 0;
 	bool able = 1;
+	bool sound_half = 0;
 
 	std::u32string str;
 	
@@ -153,6 +155,10 @@ public:
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)&& is_above) {
 			is_pressed = 1;
 			choseSound.play();
+			std::this_thread::sleep_for(std::chrono::milliseconds(25));
+			choseSound.pause();
+			sound_half = 1;
+
 		}
 
 		if(is_pressed&&!sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
@@ -180,8 +186,10 @@ public:
 		bool flag = is_click;
 		is_click = 0;
 		
-		if(flag)choseSound.play();
-
+		if (flag && sound_half) {
+			choseSound.play();
+			sound_half = 0;
+		}
 		return flag;
 	}
 
