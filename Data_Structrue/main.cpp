@@ -1,4 +1,5 @@
-#include"State.cpp"
+#pragma once
+#include"State.h"
 
 using namespace std;
 void solve() {

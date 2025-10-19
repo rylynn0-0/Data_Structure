@@ -133,36 +133,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Arrow.cpp" />
-    <ClCompile Include="ArrowButton.cpp" />
-    <ClCompile Include="Button.cpp" />
-    <ClCompile Include="Home.cpp" />
-    <ClCompile Include="input_box.cpp" />
-    <ClCompile Include="Linked.cpp" />
-    <ClCompile Include="LinkNode.cpp" />
-    <ClCompile Include="List.cpp" />
-    <ClCompile Include="ListNode.cpp" />
+    <ClCompile Include="BinaryTree.h" />
+    <ClCompile Include="Home.h" />
+    <ClCompile Include="input_box.h" />
+    <ClCompile Include="input_test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Linked.h" />
+    <ClCompile Include="LinkNode.h" />
+    <ClCompile Include="List.h" />
+    <ClCompile Include="ListNode.h" />
     <ClCompile Include="List_test.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Queue.cpp" />
-    <ClCompile Include="Scrollbox.cpp" />
-    <ClCompile Include="Sequential_List.cpp" />
-    <ClCompile Include="show.cpp" />
-    <ClCompile Include="ShowQueue.cpp" />
-    <ClCompile Include="ShowStack.cpp" />
-    <ClCompile Include="Stack.cpp">
+    <ClCompile Include="Queue.h" />
+    <ClCompile Include="Scrollbox.h" />
+    <ClCompile Include="show.h" />
+    <ClCompile Include="ShowQueue.h" />
+    <ClCompile Include="ShowStack.h" />
+    <ClCompile Include="Stack.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="state.cpp" />
+    <ClCompile Include="state.h" />
+    <ClCompile Include="test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TreeNode.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sequential_List.h" />
+    <ClInclude Include="Arrow.h" />
+    <ClInclude Include="ArrowButton.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="mylib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

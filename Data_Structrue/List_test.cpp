@@ -1,4 +1,4 @@
-#include"Sequential_List.h"
+
 #include<iostream>
 #include<SFML/Graphics.hpp>
 //#include"Button.cpp"
@@ -9,7 +9,7 @@
 //#include"Scrollbox.cpp"
 //#include"Linked.cpp"
 //#include"ShowStack.cpp"
-#include"ShowQueue.cpp"
+#include"mylib.h"
 
 
 using namespace std;
@@ -22,7 +22,15 @@ void solve() {
     //Linked link;
     /*ListNode<char> list('(', {100,100}, {100,100}, 24);
     list.set_char('(');*/
-    ShowQueue<int> que;
+    TreeNode node;
+    Button btn({ 50,50 });
+    Button changebtn({ 50,150 });
+    node.setNum(1);
+    TreeNode* chose=nullptr;
+    int ischose = 0;
+    int x=1;
+
+    //node.move_setLinkedPosition({ 100,100 },200);
     
    
     /*LinkNode node({ 200,200 }, 200);
@@ -53,7 +61,25 @@ void solve() {
                 window.close();
 
            // list.update(window, event);
-            que.update(window, event);
+            node.update(window, event);
+            btn.update(window, event);
+            changebtn.update(window, event);
+            if (btn.click() && ischose) {
+               // std::cout << chose->getnum() << std::endl;
+                chose->addSon(++x);
+               
+            }
+
+            if (changebtn.click()) {
+                node.changeState();
+            }
+
+
+            if (node.click()) {
+                chose = node.getchose();             
+                ischose = 1;
+            }
+
            /* node.update(window, event);
             node2.update(window, event);
             node3.update(window, event);
@@ -65,9 +91,11 @@ void solve() {
            
         }
 
-        //que.update_shine(time);
+        node.update_shine(time);
         window.clear(); 
-        window.draw(que);
+        window.draw(node);
+        window.draw(btn);
+        window.draw(changebtn);
         //window.draw(list);
        
        /* window.draw(node);

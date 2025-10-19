@@ -18,63 +18,72 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Sequential_List.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="List_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
+    <ClCompile Include="input_box.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkNode.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="List.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListNode.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scrollbox.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="show.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowQueue.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowStack.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="state.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Home.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeNode.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="input_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="input_box.cpp">
+    <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ListNode.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="List.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Arrow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="state.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Home.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Scrollbox.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="show.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="LinkNode.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Stack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowStack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ArrowButton.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Queue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowQueue.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="BinaryTree.h">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sequential_List.h">
+    <ClInclude Include="Arrow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrowButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mylib.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
