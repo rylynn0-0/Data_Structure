@@ -16,6 +16,7 @@ public:
 		str.push_back(U"链式表");
 		str.push_back(U"栈");
 		str.push_back(U"队列");
+		str.push_back(U"KMP");
 		str.push_back(U"二叉树");
 		str.push_back(U"哈哈");
 		Init();

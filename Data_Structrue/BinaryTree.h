@@ -5,9 +5,14 @@
 class BinaryTree :public Show {
 	TreeNode* head;
 	TreeNode* chose;
+
+	
+
 	Button btn;
 	bool is_chose=0;
 	bool is_root_set = 0;
+	sf::RectangleShape r;
+	
 public:
 
 	BinaryTree():Show(3),btn({940,450}) {
@@ -17,20 +22,17 @@ public:
 		head->set_chosen();
 		is_chose = 1;
 		set_insert_name(U"SET");
+		r.setSize({ 100,50 });
+		r.setFillColor(sf::Color::White);
+		r.setOutlineThickness(5);
+		r.setOutlineColor(sf::Color::Blue);
+		r.setPosition({200,200});
 	}
 
 	void update(const sf::RenderWindow& window, std::optional<sf::Event> event) {
 		if (!isDone)return;
+		std::lock_guard<std::mutex>lock(mtx);
 		
-		if (!is_catch)
-			btn.update(window, event);
-		
-
-		if(btn.click()) {
-			head->changeState();
-		}
-		if (!is_catch);
-		head->update(window, event);
 
 		if (head->click()) {
 			if (chose)chose->set_unchosen();
@@ -83,8 +85,19 @@ public:
 				}
 			}
 		}
-		
+
 		Show::update(window, event);
+
+		if (!is_catch) {
+			btn.update(window, event);
+
+			if (btn.click()) {
+				head->changeState();
+			}
+		}
+
+		if (!is_catch)
+			head->update(window, event);
 	}
 
 	void Insert(int num) {
@@ -101,15 +114,25 @@ public:
 			chose->addSon_thread(num);
 		}
 
-		isDone = 1;
-		isReady = 1;
+		
 		inputbox.reset();
 		inputbox.got_put();
 		inputbox.set_normal();
+		sf::Vector2f s = { 100,50 };
+		s.x = head->getMaxIndex() * (220) - 10;
+		r.setSize(s);
+
+		isDone = 1;
+		isReady = 1;
 	}
 
 	void update_position(sf::Vector2i delta) {
 		head->update_position(delta);
+		sf::Vector2f pos = r.getPosition();
+		pos.x += delta.x;
+		pos.y += delta.y;
+		if(head->getState()==TreeNode::STATE::LINEAR)r.setPosition(pos);
+
 	}
 
 	void update_shine(sf::Time time)const {
@@ -126,6 +149,11 @@ public:
 		}
 		chose->set_chosen();
 		tp->Delete();
+
+		sf::Vector2f s = { 100,50 };
+		s.x = head->getMaxIndex() * (220) - 10;
+		r.setSize(s);
+
 		isDone = 1;
 	}
 
@@ -137,11 +165,13 @@ public:
 		head->Clear();
 		head->setLinkedPosition({ 600,100 });
 		head->setLinearPosition({ 200,200 });
+		r.setPosition({ 200,200 });
+		r.setSize({ 100,50 });
 	}
 
 private:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
-		
+		if(head->getState()==TreeNode::STATE::LINEAR)target.draw(r, states);
 		target.draw(*head, states);
 		target.draw(btn, states);
 		Show::draw(target,states);

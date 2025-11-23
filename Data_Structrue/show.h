@@ -42,14 +42,15 @@ public:
 
 
 	void update(const sf::RenderWindow& window, std::optional<sf::Event> event) {
+		if (update_ptr != nullptr && update_ptr->joinable()&& isDone && isUpdate) {
+			update_ptr->join();
+			update_ptr.reset();
+		}
+
 		if (update_ptr == nullptr) {
 			update_ptr = std::make_unique<std::thread>([this, &window, event]() {update_thread(window, event); });
 		}
-		if (update_ptr != nullptr && update_ptr->joinable() &&isDone && isUpdate) {
-			update_ptr->join();
-			update_ptr.reset();
-			 
-		}
+		
 	}
 
 	virtual void update_press(const sf::RenderWindow& window, std::optional<sf::Event> event){}
@@ -129,7 +130,9 @@ public:
 	}
 
 
-	virtual void Insert(int num) = 0;
+	virtual void Insert(int num) {};
+
+	virtual void Insert(std::string str) {};
 
 	virtual void Delete(){}
 
@@ -194,7 +197,10 @@ public:
 			if (threadPtr == nullptr) {
 				isDone = 0;
 
-				threadPtr = std::make_unique<std::thread>([this]() {this->Insert(inputbox.get_num()); });
+				if(inputbox.get_state() == InputBox::STATE::INT)
+					threadPtr = std::make_unique<std::thread>([this]() {this->Insert(inputbox.get_num()); });
+				else
+					threadPtr = std::make_unique<std::thread>([this]() {this->Insert(inputbox.get_str()); });
 			}
 
 		}
@@ -216,9 +222,7 @@ public:
 		}
 		
 		if (isDone &&!is_catch&&!above()&& sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)) {
-			if (!is_catch) {			
-				MousePos = sf::Mouse::getPosition(window);
-			}
+				MousePos = sf::Mouse::getPosition();
 				is_catch = 1;
 			}
 		
@@ -229,16 +233,13 @@ public:
 
 		if (isDone&&is_catch) {
 			
-			sf::Vector2i NowPos = sf::Mouse::getPosition(window);
-			sf::Vector2i delta=NowPos;
-
-			delta.x -= MousePos.x;
-			delta.y -= MousePos.y;
-
-			MousePos = NowPos;
-
-			update_position(delta);
-
+			
+				sf::Vector2i pos = sf::Mouse::getPosition();
+				
+				sf::Vector2i delta = pos - MousePos;
+				MousePos = pos;
+				update_position(delta);
+			
 		}
 		
 

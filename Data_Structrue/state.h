@@ -11,7 +11,8 @@ enum STATE {
 	LINKEDLIST,
 	STACK,
 	QUEUE,
-	BINARYTREE
+	BINARYTREE,
+	KMP
 
 };
 
@@ -21,13 +22,16 @@ class State : public sf::Drawable {
 	ShowStack<int>* stack;
 	ShowQueue<int>* queue;
 	BinaryTree *binarytree;
+	ShowKMP* kmp;
 	Home* home;
 	STATE state;
+	
 	
 public :
 	State() { 
 		home = new Home();		
 		state = STATE::HOME; 
+		
 	}
 
 	void update(const sf::RenderWindow& window, std::optional<sf::Event> event) {
@@ -61,7 +65,13 @@ public :
 			if (binarytree->Return()) {
 				state = STATE::HOME;
 			}
-
+			break;
+		case STATE::KMP:
+			kmp->update(window, event);
+			if (kmp->Return()) {
+				state = STATE::HOME;
+			}
+			break;
 		case STATE::HOME:
 			home->update(window, event);
 			if (home->click()) {
@@ -83,6 +93,11 @@ public :
 				if (home->getstate() == U"∂”¡–") {
 					state = STATE::QUEUE;
 					if (!queue)queue= new ShowQueue<int>();
+				}
+
+				if (home->getstate() == U"KMP") {
+					state = STATE::KMP;
+					if (!kmp)kmp = new ShowKMP();
 				}
 
 				if (home->getstate() == U"∂˛≤Ê ˜") {
@@ -114,6 +129,9 @@ public :
 		case STATE::BINARYTREE:
 			binarytree->update_shine(time);
 			break;
+		case STATE::KMP:
+			kmp->update_shine(time);
+			break;
 		case STATE::HOME:
 			home->update_shine(time);
 			break;
@@ -138,6 +156,9 @@ private:
 			break;
 		case STATE::QUEUE:
 			target.draw(*queue, states);
+			break;
+		case STATE::KMP:
+			target.draw(*kmp, states);
 			break;
 		case STATE::BINARYTREE:
 			target.draw(*binarytree, states);

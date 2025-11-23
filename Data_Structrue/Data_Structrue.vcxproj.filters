@@ -72,6 +72,12 @@
     <ClCompile Include="BinaryTree.h">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="PartternStr.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowKMP.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arrow.h">
@@ -84,6 +90,21 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mylib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainStr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GLNode_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GList_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="oxy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -22,15 +22,27 @@ void solve() {
     //Linked link;
     /*ListNode<char> list('(', {100,100}, {100,100}, 24);
     list.set_char('(');*/
-    TreeNode node;
+    /*TreeNode node;
     Button btn({ 50,50 });
     Button changebtn({ 50,150 });
     node.setNum(1);
     TreeNode* chose=nullptr;
     int ischose = 0;
-    int x=1;
+    int x=1;*/
+
+   /* MainStr mainStr("ababc");
+    PartternStr partternStr("abc");*/
+
+   // ShowKMP showkmp;
 
     //node.move_setLinkedPosition({ 100,100 },200);
+
+    Oxy oxy({100,450});
+    Oxy o2({ 800,450 });
+    Button btn({ 400,500 });
+    Button re({ 600,500 });
+    btn.set_str(U"SVD·Ö½â");
+    re.set_str(U"RESET");
     
    
     /*LinkNode node({ 200,200 }, 200);
@@ -49,6 +61,13 @@ void solve() {
         a[i] = new Arrow({ 300,300 }, { X,Y }, 5);
     }*/
 
+
+   // GLNode_1 gln_(GLNode_1::Tag::LIST, { 200,100 });
+    //gln_.build_list("((()),((e)),(a,(b,c,d)))");
+
+
+
+
     sf::Clock clock;
 
     while (window.isOpen())
@@ -61,41 +80,90 @@ void solve() {
                 window.close();
 
            // list.update(window, event);
-            node.update(window, event);
-            btn.update(window, event);
-            changebtn.update(window, event);
-            if (btn.click() && ischose) {
-               // std::cout << chose->getnum() << std::endl;
-                chose->addSon(++x);
-               
-            }
+            //node.update(window, event);
+            //btn.update(window, event);
+            //changebtn.update(window, event);
+            //if (btn.click() && ischose) {
+            //   // std::cout << chose->getnum() << std::endl;
+            //    chose->addSon(++x);
+            //   
+            //}
 
-            if (changebtn.click()) {
-                node.changeState();
-            }
+            //if (changebtn.click()) {
+            //    node.changeState();
+            //}
 
 
-            if (node.click()) {
-                chose = node.getchose();             
-                ischose = 1;
-            }
+            //if (node.click()) {
+            //    chose = node.getchose();             
+            //    ischose = 1;
+            //}
 
            /* node.update(window, event);
             node2.update(window, event);
             node3.update(window, event);
+
+            
             
             pos.x += 1;
             pos.y += 1;
              node.setPosition(pos);*/
+            oxy.update(window, event);
+            o2.update(window, event);
+            btn.update(window, event);
+            re.update(window, event);
             
+            if (btn.click()) {
+               
+              
+                Eigen::Matrix2f A = oxy.getMatrix();
+                Eigen::JacobiSVD<Eigen::Matrix2f> svd(A, Eigen::ComputeFullU | Eigen::ComputeFullV);
+                Eigen::Matrix2f U = svd.matrixU();
+                Eigen::Matrix2f V = svd.matrixV();
+                Eigen::MatrixXf S = Eigen::Matrix2f::Zero();
+                std::cout << A<<std::endl;
+                S(0, 0) = svd.singularValues()(0);
+                S(1, 1) = svd.singularValues()(1);
+               
+                o2.reset();
+
+                o2.move(U,S,V.transpose());
+                
+               
+
+               
+
+
+            }
+
+            if (re.click()) {
+                oxy.reset();
+                o2.reset();
+            }
+           /* mainStr.update(window, event);
+            partternStr.update(window, event);*/
+
+           // showkmp.update(window, event);
+            //gln.update(window, event);
+            //gln_.update(window, event);
+
            
         }
 
-        node.update_shine(time);
+       /* node.update_shine(time);*/
         window.clear(); 
-        window.draw(node);
+       // window.draw(gln);
+        window.draw(oxy);
+        window.draw(o2);
         window.draw(btn);
-        window.draw(changebtn);
+        window.draw(re);
+        //window.draw(gln_);
+        //window.draw(showkmp);
+       /* window.draw(mainStr);
+        window.draw(partternStr);*/
+       /* window.draw(node);
+        window.draw(btn);
+        window.draw(changebtn);*/
         //window.draw(list);
        
        /* window.draw(node);

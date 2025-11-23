@@ -8,8 +8,21 @@ void solve() {
     sf::RenderWindow window(sf::VideoMode({ 1280, 640 }), "Data_Structrue", sf::Style::Close, sf::State::Windowed, setting);
     window.setFramerateLimit(60);
 
-    State state;
 
+    State state;
+    sf::Image img;
+   
+    if (!img.loadFromFile("cursor.png")) {
+        exit(-1);
+    }
+    
+    auto pixels = img.getPixelsPtr();
+    sf::Cursor mycursor(pixels,img.getSize(), {0,0});
+    
+
+    window.setMouseCursor(mycursor);
+    //window.setMouseCursorGrabbed(true);
+   // window.setMouseCursor();
     sf::Clock clock;
 
     while (window.isOpen())

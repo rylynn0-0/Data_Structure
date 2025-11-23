@@ -128,6 +128,7 @@ public:
 	TreeNode* father;
 	TreeNode* next;
 	TreeNode* front;
+	
 	STATE state;
 
 	std::unique_ptr<std::thread> add_ptr;
@@ -172,6 +173,7 @@ private:
 	sf::RectangleShape normal_linear;
 	sf::RectangleShape above_linear;
 	sf::RectangleShape pressed_linear;
+	
 	sf::RectangleShape* show_linear;
 
 	sf::CircleShape normal_linked;
@@ -214,7 +216,7 @@ private:
 	bool addSonDone=1;
 	
 	TreeNode* root;
-	
+	int maxIndex;
 
 	bool is_above_linked;
 	bool is_pressed_linked;
@@ -251,6 +253,7 @@ public:
 
 		
 		
+		
 
 		sf::Vector2f pos = linear_pos;
 		pos.x += (index)*(linear_size.x + 10);
@@ -281,6 +284,10 @@ public:
 
 		leftpoint.update(left_from, left_to);
 		rightpoint.update(right_from, right_to);
+	}
+
+	int getMaxIndex() {
+		return maxIndex;
 	}
 
 	void InitLinked() {
@@ -371,6 +378,7 @@ public:
 		left = linked_pos.x;
 		right = linked_pos.x;
 		chose = this;
+		
 	}
 
 	void linked_update(const sf::RenderWindow& window, std::optional<sf::Event> event){
@@ -449,6 +457,8 @@ public:
 		else {
 			show_linear = &normal_linear;
 		}
+
+		
 	}
 
 	void update(const sf::RenderWindow& window, std::optional<sf::Event> event) {
@@ -463,7 +473,10 @@ public:
 		for (TreeNode* s : son) {
 			s->update(window, event);
 		}
-		
+		maxIndex = index;
+		for (TreeNode* s : son) {
+			maxIndex = std::max(maxIndex, s->getMaxIndex());
+		}
 	}
 
 	void update_shine(sf::Time time) {
@@ -567,7 +580,13 @@ public:
 		rightnode->setPosition(pos);
 
 		update_point();
+
 		
+		
+	}
+
+	TreeNode::STATE getState() {
+		return state;
 	}
 
 	void setLinkedPosition(sf::Vector2f pos) {
@@ -1066,14 +1085,14 @@ private:
 		
 		if (state == STATE::LINEAR) {
 			
-			if(!son.size())target.draw(*leftnode, states);
-			if(son.size()<2)target.draw(*rightnode, states);
+			//if(!son.size())target.draw(*leftnode, states);
+			//if(son.size()<2)target.draw(*rightnode, states);
 			target.draw(*show_linear, states);
 			target.draw(LinearText, states);
 			
 			if (is_chosen_linear) {
-				target.draw(leftpoint, states);
-				target.draw(rightpoint, states);
+				if(son.size())target.draw(leftpoint, states);
+				if(son.size()>1)target.draw(rightpoint, states);
 			}
 			
 		}

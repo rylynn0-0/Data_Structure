@@ -102,7 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\SFML-3.0.2-windows-vc17-64-bit\SFML-3.0.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\eigen-5.0.0\eigen-5.0.0;D:\SFML-3.0.2-windows-vc17-64-bit\SFML-3.0.2\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdclatest</LanguageStandard_C>
       <EnableModules>true</EnableModules>
@@ -145,15 +145,17 @@
     <ClCompile Include="ListNode.h" />
     <ClCompile Include="List_test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="PartternStr.h" />
     <ClCompile Include="Queue.h" />
     <ClCompile Include="Scrollbox.h" />
     <ClCompile Include="show.h" />
+    <ClCompile Include="ShowKMP.h" />
     <ClCompile Include="ShowQueue.h" />
     <ClCompile Include="ShowStack.h" />
     <ClCompile Include="Stack.h">
@@ -169,7 +171,12 @@
     <ClInclude Include="Arrow.h" />
     <ClInclude Include="ArrowButton.h" />
     <ClInclude Include="Button.h" />
+    <ClInclude Include="GList_1.h" />
+    <ClInclude Include="GLNode_1.h" />
+    <ClInclude Include="MainStr.h" />
     <ClInclude Include="mylib.h" />
+    <ClInclude Include="oxy.h" />
+    <ClInclude Include="Slider.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

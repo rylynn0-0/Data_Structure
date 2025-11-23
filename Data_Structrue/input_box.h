@@ -4,6 +4,13 @@
 #include<iostream>
 
 class InputBox :public sf::Drawable{
+
+public:
+	enum STATE {
+		INT, CHAR
+	};
+
+private:
 	std::string str;
 	int num = 0;
 	std::u32string normal_str;
@@ -34,8 +41,13 @@ class InputBox :public sf::Drawable{
 
 	int pre_time;
 
+	STATE state = STATE::INT;
+
 
 public:
+	
+
+
 	InputBox(sf::Vector2f pos, sf::Vector2f size,int str_size,std::u32string nstr,int len):
 		input_text(font),normal_text(font),show_text(new sf::Text(font) )
 	   , aboveSound(aboveBuffer), choseSound(choseBuffer){
@@ -107,7 +119,7 @@ public:
 		sf::Vector2f position = pos;
 		position.x += 10;
 		position.y += size.y / 2;
-		position.y -= str_size / 2;
+		position.y -= str_size / 3*2;
 		line.setPosition(position);
 		
 		position.y -= str_size / 6;
@@ -152,7 +164,8 @@ public:
 
 				int input= (int)(code->scancode) ;
 				sf::Vector2 line_pos = line.getPosition();
-				if (input >= 26 && input < 35&& line_pos.x+str_size< max_x) {
+
+				if (state == STATE::INT&&input >= 26 && input < 35&& line_pos.x+str_size< max_x) {
 					num = num * 10 + input-25;
 					if (str == "0") {
 						str = "";
@@ -162,7 +175,7 @@ public:
 					input_text.setString(str);
 					line_pos.x += str_size;
 				}
-				if (input == 35&&line_pos.x+str_size<max_x) {
+				else if (state == STATE::INT&&input == 35&&line_pos.x+str_size<max_x) {
 					num *= 10;
 					if (str != "0") {
 						str += '0';
@@ -170,12 +183,40 @@ public:
 						line_pos.x += str_size;
 					}
 				}
-				if (input == 38&&str.size()) {
-					num /= 10;
+
+				else if(state==STATE::CHAR&& input >= 0 && input < 26){
+					str += (char)input + 'a';
+					input_text.setCharacterSize(35);
+					str_size = 35;
+					if (line_pos.x + str_size < max_x) {
+						input_text.setString(str);
+						line_pos.x += str_size;
+					}
+					else {
+						std::string show_s = str.substr(str.length() - 6);
+						input_text.setString(show_s);
+					}
+				}
+
+				else if (state == STATE::INT && input == 38&&str.size()) {
+					if(state==STATE::INT)num /= 10;
 					str = str.substr(0, str.size() - 1);
 					input_text.setString(str);
 					line_pos.x -= str_size;
 				}
+				else if (state == STATE::CHAR && input == 38 && str.size()) {
+					str = str.substr(0, str.size() - 1);
+					if (str.length() < 6) {
+						input_text.setString(str);
+						line_pos.x -= str_size;
+					}
+					else {
+						std::string show_s = str.substr(str.length() - 6);
+						input_text.setString(show_s);
+					}
+				}
+
+
 				std::cout << "°´¼üÊäÈë£¬scancode£º"<<input << std::endl;
 				if (input == 36) {
 					is_inputting = 1;
@@ -241,8 +282,20 @@ public:
 		else is_shine = 0;
 	}
 
+	void set_state(STATE s) {
+		state = s;
+	}
+
+	STATE get_state() {
+		return state;
+	}
+
 	int get_num() {
 		return num;
+	}
+
+	std::string get_str() {
+		return str;
 	}
 
 	void reset() {

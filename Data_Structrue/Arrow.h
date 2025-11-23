@@ -11,16 +11,24 @@ class Arrow :public sf::Drawable {
 	sf::Vector2f from;
 	sf::Vector2f to;
 	double size;
+	double ss = 25;
 	int x = 0;
+
+	bool is_line = 0;
 
 	sf::Color color = sf::Color::Black;
 public:
 	
 
-	Arrow(sf::Vector2f from={0,0}, sf::Vector2f to={0,0}, double size=5) {
+	Arrow(sf::Vector2f from={0,0}, sf::Vector2f to={0,0}, double size=5,double ss=25):ss(ss) {
 		this->from = from;
 		this->to = to;
 		this->size = size;
+
+		middle.setFillColor(sf::Color::White);
+		right.setFillColor(sf::Color::White);
+		left.setFillColor(sf::Color::White);
+
 		build();
 	}
 
@@ -48,12 +56,10 @@ public:
 		left.setPosition(pos);
 
 		middle.setSize(sf::Vector2f(length, size));
-		left.setSize(sf::Vector2f(25 + size, size));
-		right.setSize(sf::Vector2f(25, size));
+		left.setSize(sf::Vector2f(ss + size, size));
+		right.setSize(sf::Vector2f(ss, size));
 
-		middle.setFillColor(sf::Color::White);
-		right.setFillColor(sf::Color::White);
-		left.setFillColor(sf::Color::White);
+		
 
 		middle.setOutlineColor(color);
 		right.setOutlineColor(color);
@@ -107,13 +113,30 @@ public:
 		build();
 	}
 
+	void set_color(sf::Color c) {
+		middle.setFillColor(c); 
+		left.setFillColor(c);
+		right.setFillColor(c);
+
+	}
+
+	void set_ss(double ss) {
+		this->ss = ss;
+	}
+
+	void set_line() {
+		is_line = 1;
+	}
+
 
 private:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override {
 
 		target.draw(middle, states);
-		target.draw(right, states);
-		target.draw(left, states);
+		if (!is_line) {
+			target.draw(right, states);
+			target.draw(left, states);
+		}
 
 
 	}

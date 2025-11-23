@@ -150,6 +150,7 @@ public:
 	}
 
 	void Clear() {
+		while (!isDone);
 		mylist.clear();
 		clearbutton.set_release();
 		sf::Vector2f position = pos;

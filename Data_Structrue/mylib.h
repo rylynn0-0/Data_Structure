@@ -15,7 +15,12 @@
 #include"Stack.h"
 #include"TreeNode.h"
 #include"BinaryTree.h"
-
+#include"MainStr.h"
+#include"PartternStr.h"
+#include"ShowKMP.h"
+#include"Slider.h"
+#include"GList_1.h"
+#include"oxy.h"
 
 
 //std::unique_ptr<std::thread> TreeNode::add_ptr = nullptr;

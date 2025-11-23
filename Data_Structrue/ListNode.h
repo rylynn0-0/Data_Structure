@@ -22,6 +22,7 @@ class ListNode :public sf::Drawable{
 	sf::Sound choseSound;
 
 	std::string str;
+	int maxx = 100;
 
 	bool used = 0;
 	bool is_chosen;
@@ -83,13 +84,12 @@ public:
 		is_above=0;
 	}
 
-	ListNode<T>():text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {}
-
-	ListNode<T>(T n, sf::Vector2f pos, sf::Vector2f size={200,50}, int str_size=24) : text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {
+	ListNode<T>(T n, sf::Vector2f pos, sf::Vector2f size={100,50}, int str_size=24) : text(font), aboveSound(aboveBuffer), choseSound(choseBuffer) {
 		if (typeid(n) == typeid(int))num = n;
 		else if (typeid(n) == typeid(char)) {
 			str = n;
 		}
+		maxx = size.x;
 
 		this->str_size = str_size;
 		is_chosen = 0;
@@ -199,6 +199,7 @@ public:
 	}
 
 	void setSize(sf::Vector2f size) {
+		
 		normal_rect.setSize(size);
 		above_rect. setSize(size);
 		chosen_rect.setSize(size);
@@ -242,7 +243,7 @@ public:
 			str = std::to_string(num);
 
 			int len = std::to_string(num).length();
-			size.x = std::max(100, str_size * len + 20);
+			size.x = std::max(maxx, str_size * len + 20);
 
 			setSize(size);
 
@@ -264,10 +265,10 @@ public:
 			this->str = s;
 
 			int len = str.length();
-			size.x = std::max(100, str_size * len + 20);
+			size.x = std::max(maxx, str_size * len + 20);
 
 			setSize(size);
-
+			text.setCharacterSize(str_size);
 			text.setString(str);
 			sf::Vector2 pos = normal_rect.getPosition();
 			pos.x += normal_rect.getSize().x / 2;
@@ -288,6 +289,14 @@ public:
 	void set_chosen() {
 		aboveSound.play();
 		is_chosen = 1;
+	}
+
+	void set_chosen_now() {
+		show_rect = &chosen_rect;
+	}
+
+	void set_unchosen_now() {
+		show_rect = &normal_rect;
 	}
 
 	void set_able() {
